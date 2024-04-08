@@ -1,0 +1,78 @@
+ ___________________________________
+|               Player              |
+|-----------------------------------|
+| - name: String                   |
+| - healthPoints: int              |
+| - courage: int                   |
+| - stamina: int                   |
+| - magic: int                     |
+| - experienceLevel: int           |
+|-----------------------------------|
+| + Player()                       |
+| + setName(String name): void     |
+| + getName(): String              |
+| + getHealthPoints(): int         |
+| + setHealthPoints(int hp): void  |
+| + getCourage(): int              |
+| + setCourage(int courage): void  |
+| + getStamina(): int              |
+| + setStamina(int stamina): void  |
+| + getMagic(): int                |
+| + setMagic(int magic): void      |
+| + getExperienceLevel(): int     |
+| + setExperienceLevel(int level): void |
+ -----------------------------------
+                    |
+                    |
+          -----------------
+         |               |
+         |               |
+  ----------------   ------------------
+ | Scene        |   | GreywoodScene   |
+ |--------------|   |-----------------|
+ | - description: String             |
+ | - choices: String[]               |
+ |-----------------------------------|
+ | + Scene(description: String,      |
+ |         choices: String[])        |
+ | + displayScene(): void            |
+ | + getUserChoice(): int            |
+ | + handleOutcome(int choice,       |
+ |                 Player player): void |
+  -----------------------------------
+                    |
+                    |
+  -----------------------------------
+ | MerfolkEncounterScene             |
+ |-----------------------------------|
+ | - description: String             |
+ | - choices: String[]               |
+ |-----------------------------------|
+ | + MerfolkEncounterScene()        |
+ | + handleOutcome(int choice,      |
+ |                 Player player): void |
+  -----------------------------------
+                    |
+                    |
+  -----------------------------------
+ | ClovenElderScene                  |
+ |-----------------------------------|
+ | - description: String             |
+ | - choices: String[]               |
+ |-----------------------------------|
+ | + ClovenElderScene()             |
+ | + handleOutcome(int choice,      |
+ |                 Player player): void |
+  -----------------------------------
+                    |
+                    |
+  -----------------------------------
+ | KrakenBattleScene                 |
+ |-----------------------------------|
+ | - description: String             |
+ | - choices: String[]               |
+ |-----------------------------------|
+ | + KrakenBattleScene()            |
+ | + handleOutcome(int choice,      |
+ |                 Player player): void |
+  -----------------------------------
